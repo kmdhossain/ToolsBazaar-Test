@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
@@ -29,6 +29,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\ToolsBazaar.Domain\ToolsBazaar.Domain.csproj" />
 		<ProjectReference Include="..\ToolsBazaar.Persistence\ToolsBazaar.Persistence.csproj" />
+		<ProjectReference Include="..\ToolsBazaar.Web\ToolsBazaar.Web.csproj" />
 	</ItemGroup>
 
 </Project>

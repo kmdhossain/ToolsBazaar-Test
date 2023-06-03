@@ -18,6 +18,15 @@ public class CustomersController : ControllerBase
         _customerRepository = customerRepository;
     }
 
+    public CustomersController(ICustomerRepository customerRepository, ILogger logger)
+    {
+        CustomerRepository = customerRepository;
+        Logger = logger;
+    }
+
+    public ICustomerRepository CustomerRepository { get; }
+    public ILogger Logger { get; }
+
     [HttpPut("{customerId:int}")]
     public void UpdateCustomerName(int customerId, [FromRoute] CustomerDto dto)
     {
